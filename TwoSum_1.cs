@@ -17,7 +17,7 @@ public class TwoSum_1
             }
             else
             {
-                dictionary[num].Add(num);
+                dictionary[num].Add(index);
             }
             index++;
         }
