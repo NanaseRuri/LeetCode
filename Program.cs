@@ -6,12 +6,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] nums=new int[]{3,3};
-            var result=TwoSum_1.TwoSum(nums,6);
-            foreach (var item in result)
-            {
-                Console.WriteLine(item);
-            }
+            AddTwoNumbers_2 temp=new AddTwoNumbers_2();
+            temp.Test();
         }
     }
 }
