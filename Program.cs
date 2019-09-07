@@ -1,4 +1,5 @@
 ﻿using System;
+using LeetCode.Solution;
 
 namespace LeetCode
 {
@@ -6,7 +7,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            AddTwoNumbers_2 temp=new AddTwoNumbers_2();
+            MedianofTwoSortedArrays_004 temp=new MedianofTwoSortedArrays_004();
             temp.Test();
         }
     }
