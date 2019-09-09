@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Linq;
+using System.Collections.Generic;
+using System;
 using LeetCode.Solution;
 
 namespace LeetCode
@@ -7,8 +9,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            MedianofTwoSortedArrays_004 temp=new MedianofTwoSortedArrays_004();
-            temp.Test();
+            LongestPalindromicSubstring_005 s=new LongestPalindromicSubstring_005();
+            s.Test();
         }
     }
 }
