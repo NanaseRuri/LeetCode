@@ -1,4 +1,6 @@
-﻿using System.Dynamic;
+﻿using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+using System.Dynamic;
 using System.Linq;
 using System.Collections.Generic;
 using System;
@@ -6,16 +8,12 @@ using LeetCode.Solution;
 
 namespace LeetCode
 {
-    class DynamicTest:DynamicObject{
-        
-    }
     class Program
     {
-
         static void Main(string[] args)
         {
-            ZigZagConversion_006 test=new ZigZagConversion_006();
-            test.Test();
+            ReverseInteger_007 reverse=new ReverseInteger_007();
+            reverse.Test();
         }
     }
 }

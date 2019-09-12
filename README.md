@@ -26,4 +26,8 @@
 
 # 6. Z 字形变换
 &emsp;&emsp;平平无奇的找规律。已知每间隔 interval=(2\*numRows-2) ，先对下标对 interval 进行求余获得 x ，然后通过 x 和 (interval-x) 之间的最小值确定相应的字符具体位于哪一行。  
-&emsp;&emsp;时间复杂度和空间复杂度都为O(n)
+&emsp;&emsp;时间复杂度和空间复杂度都为O(n)  
+
+
+# 7. 整数反转
+&emsp;&emsp;用 Int64 进行计算，然后根据结果是否大于 int 最大值或小于 int 最小值返回 0，否则进行强制类型转换对Int64值进行截断返回 int 类型值。
