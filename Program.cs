@@ -12,8 +12,12 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            ReverseInteger_007 reverse=new ReverseInteger_007();
-            reverse.Test();
+            StringToInteger_008 atoi = new StringToInteger_008();
+            int i = 0;
+            while (i++ < 3)
+            {
+                atoi.Test();
+            }
         }
     }
 }
