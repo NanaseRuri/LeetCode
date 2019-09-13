@@ -12,11 +12,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            StringToInteger_008 atoi = new StringToInteger_008();
-            int i = 0;
-            while (i++ < 3)
+            RegularExpressionMatching_010 matching = new RegularExpressionMatching_010();
+            for (int i = 0; i < 4; i++)
             {
-                atoi.Test();
+                matching.Test();
             }
         }
     }
