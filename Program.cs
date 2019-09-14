@@ -12,10 +12,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            IntegerToRoman_12 roman_12=new IntegerToRoman_12();
+            RomanToInteger_13 toInteger=new RomanToInteger_13();
             for (int i = 0; i < 4; i++)
             {
-                roman_12.Test();
+                toInteger.Test();
             }
         }
     }
