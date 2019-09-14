@@ -12,11 +12,14 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            RomanToInteger_13 toInteger=new RomanToInteger_13();
-            for (int i = 0; i < 4; i++)
-            {
-                toInteger.Test();
-            }
+            // RomanToInteger_13 toInteger=new RomanToInteger_13();
+            // for (int i = 0; i < 4; i++)
+            // {
+            //     toInteger.Test();
+            // }
+
+            LongestCommonPrefix_14 commonPrefix_14=new LongestCommonPrefix_14();
+            commonPrefix_14.Test();
         }
     }
 }
