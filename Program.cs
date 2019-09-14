@@ -18,8 +18,8 @@ namespace LeetCode
             //     toInteger.Test();
             // }
 
-            LongestCommonPrefix_14 commonPrefix_14=new LongestCommonPrefix_14();
-            commonPrefix_14.Test();
+            ThreeSum_015 sum_015=new ThreeSum_015();
+            sum_015.Test();
         }
     }
 }
