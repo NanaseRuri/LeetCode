@@ -13,8 +13,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            LetterCombinationsOfAPhoneNumber_017 phoneNumber_017 = new LetterCombinationsOfAPhoneNumber_017();
-            phoneNumber_017.Test();
+            FourSum_018 fourSum=new FourSum_018();
+            fourSum.Test();
         }
     }
 }
