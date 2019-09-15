@@ -13,8 +13,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            FourSum_018 fourSum=new FourSum_018();
-            fourSum.Test();
+            RemoveNthNodeFromEndOfList_019 removeNthNodeFromEndOfList=new RemoveNthNodeFromEndOfList_019();
+            removeNthNodeFromEndOfList.Test();
         }
     }
 }
