@@ -2,7 +2,7 @@ using System.Linq;
 using System;
 namespace LeetCode.Solution
 {
-    public class LongestCommonPrefix_14
+    public class LongestCommonPrefix_014
     {
         public string LongestCommonPrefix(string[] strs)
         {
