@@ -13,8 +13,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            RegularExpressionMatching_010 regular = new RegularExpressionMatching_010();
-            regular.Test();
+            GenerateParentheses_022 generate = new GenerateParentheses_022();
+            generate.Test();
         }
     }
 }
