@@ -27,7 +27,7 @@ namespace LeetCode.Solution
                        select e.ToString();
             for (int i = 1; i < digits.Length; i++)
             {
-                int j=i;
+                int j = i;
                 temp = from t1 in temp
                        from t2 in dictionary[digits[j]]
                        select t1 + t2;

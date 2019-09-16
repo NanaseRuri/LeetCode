@@ -64,31 +64,34 @@ namespace LeetCode.Solution
 
         public string LongestPalindrome(string s)
         {
-            int max=0;
-            int pre=0;
-            int position=0;
-            for(int i=0;i<s.Length;i++){
-                pre=max;
-                int oddSituation=LongestEverySituation(s,i,i);
-                int evenSituation=LongestEverySituation(s,i,i+1);
-                max=Math.Max(oddSituation,max);
-                max=Math.Max(evenSituation,max);
+            int max = 0;
+            int pre = 0;
+            int position = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                pre = max;
+                int oddSituation = LongestEverySituation(s, i, i);
+                int evenSituation = LongestEverySituation(s, i, i + 1);
+                max = Math.Max(oddSituation, max);
+                max = Math.Max(evenSituation, max);
 
-                if(pre!=max){
-                    position=i-(max-1)/2;                    
+                if (pre != max)
+                {
+                    position = i - (max - 1) / 2;
                 }
             }
 
-            return s.Substring(position,max);
+            return s.Substring(position, max);
         }
 
-        public int LongestEverySituation(string s,int left,int right){
-            while(left>=0&&right<s.Length&&s[left]==s[right]){
-                    left--;
-                    right++;
-
+        public int LongestEverySituation(string s, int left, int right)
+        {
+            while (left >= 0 && right < s.Length && s[left] == s[right])
+            {
+                left--;
+                right++;
             }
-            return right-left-1;
+            return right - left - 1;
         }
 
         public void Test()

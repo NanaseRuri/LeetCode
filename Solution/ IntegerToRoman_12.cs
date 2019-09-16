@@ -85,7 +85,7 @@ namespace LeetCode.Solution
                     case 1:
                     case 2:
                     case 3:
-                        result = new string(originSimbol[2 * bit], index)+result;
+                        result = new string(originSimbol[2 * bit], index) + result;
                         break;
 
                     case 4:

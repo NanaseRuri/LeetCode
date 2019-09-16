@@ -13,11 +13,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            // RemoveNthNodeFromEndOfList_019 removeNthNodeFromEndOfList=new RemoveNthNodeFromEndOfList_019();
-            // removeNthNodeFromEndOfList.Test();
-
-            ValidParentheses_020 validParentheses_020 = new ValidParentheses_020();
-            validParentheses_020.Test();
+            RegularExpressionMatching_010 regular = new RegularExpressionMatching_010();
+            regular.Test();
         }
     }
 }

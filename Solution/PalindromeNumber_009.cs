@@ -4,7 +4,7 @@ namespace LeetCode.Solution
     {
         public bool IsPalindrome(int x)
         {
-            int origin=x;
+            int origin = x;
             int result = 0;
             if (x < 0)
             {
@@ -12,11 +12,11 @@ namespace LeetCode.Solution
             }
             while (x != 0)
             {
-                int temp=x%10;
-                result=10*result+temp;
-                x/=10;                
+                int temp = x % 10;
+                result = 10 * result + temp;
+                x /= 10;
             }
-            return result==origin;
+            return result == origin;
         }
     }
 }

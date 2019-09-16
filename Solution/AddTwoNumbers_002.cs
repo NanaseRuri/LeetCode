@@ -8,6 +8,61 @@ public class AddTwoNumbers_2
         public ListNode(int x) { val = x; }
     }
 
+    public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+    {
+        int addedResult = l1.val + l2.val;
+        int result = addedResult % 10;
+        int carry = addedResult / 10;
+
+        ListNode start = new ListNode(result);
+        ListNode variantNode = start;
+        l1 = l1.next;
+        l2 = l2.next;
+
+        while (l1 != null && l2 != null)
+        {
+            addedResult = l1.val + l2.val + carry;
+            carry = addedResult / 10;
+            result = addedResult % 10;
+
+            variantNode.next = new ListNode(result);
+
+            variantNode = variantNode.next;
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+        while (l1 != null && l2 == null)
+        {
+            addedResult = l1.val + carry;
+            carry = addedResult / 10;
+            result = addedResult % 10;
+
+            variantNode.next = new ListNode(result);
+
+            variantNode = variantNode.next;
+            l1 = l1.next;
+        }
+        while (l1 == null && l2 != null)
+        {
+            addedResult = l2.val + carry;
+            carry = addedResult / 10;
+            result = addedResult % 10;
+
+            variantNode.next = new ListNode(result);
+
+            variantNode = variantNode.next;
+            l2 = l2.next;
+        }
+
+        if (carry > 0)
+        {
+            variantNode.next = new ListNode(1);
+        }
+
+        return start;
+    }
+
+
     public void Test()
     {
         ListNode l1 = new ListNode(2);
@@ -24,56 +79,5 @@ public class AddTwoNumbers_2
             Console.WriteLine(result.val);
             result = result.next;
         }
-    }
-
-
-    public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
-    {
-        int addedResult=l1.val+l2.val;
-        int result=addedResult%10;
-        int carry=addedResult/10;
-
-        ListNode start=new ListNode(result);
-        ListNode variantNode=start;
-        l1=l1.next;
-        l2=l2.next;
-        
-        while(l1!=null&&l2!=null){
-            addedResult=l1.val+l2.val+carry;
-            carry=addedResult/10;
-            result=addedResult%10;
-            
-            variantNode.next=new ListNode(result);
-            
-            variantNode=variantNode.next;
-            l1=l1.next;
-            l2=l2.next;
-        }
-        while(l1!=null&&l2==null){
-            addedResult=l1.val+carry;
-            carry=addedResult/10;
-            result=addedResult%10;
-            
-            variantNode.next=new ListNode(result);
-            
-            variantNode=variantNode.next;
-            l1=l1.next;
-        }
-        while(l1==null&&l2!=null){ 
-            addedResult=l2.val+carry;
-            carry=addedResult/10;
-            result=addedResult%10;
-            
-            variantNode.next=new ListNode(result);
-            
-            variantNode=variantNode.next;
-            l2=l2.next;
-        }
-
-        if(carry>0){
-            variantNode.next=new ListNode(1);
-        }
-
-        return start;
     }
 }
